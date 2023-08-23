@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    /* .ar1{
+
+color: brown;
+width: 100%;
+
+height: 3cm;
+ border: 12px solid green; 
+} */
+*{
+    background-color:white;
+}
+.usercontent{
+    display: flex;
+    width:98%;
+    height:5cm;
+    border: 1px solid black;
+    position:absolute;
+
+}
+.a1{
+width:25%;
+height:5cm;
+border: 1px solid red;;
+}
+.heading{
+  margin: auto;
+padding: auto;
+font-size: 25px;;
+}
+.image{
+    width:8cm;
+    height:5cm;
+}
+.ar{
+  width: 50%;
+  height: auto;
+  margin-top: 9%;
+  margin-left: 25% ;
+  border: 2px solid red;
+}
+.roomtype{
+  margin-left: 1cm;;
+  margin-top: .5cm;
+  padding: 3px;
+  margin-bottom: .5cm;;
+}
+</style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+  integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+            height="15"
+            alt="MDB Logo"
+            loading="lazy"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/customer">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+       
+        </ul>
+        <a class="nav-link" href="#">Team</a>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+  
+        <!-- Notifications -->
+       
+              <a class="dropdown-item" href="/login">LOG_OUT</a>
+            </li>
+         
+          </ul>
+        </div>
+
+        <!-- <div class="dropdown">
+          <a
+            class="dropdown-toggle d-flex align-items-center hidden-arrow"
+            href="#"
+            id="navbarDropdownMenuAvatar"
+            role="button"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          > -->
+            <img
+              src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+              class="rounded-circle"
+              height="25"
+              alt="Black and White Portrait of a Man"
+              loading="lazy"
+            />
+          </a>
+
+      
+          <!-- <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="navbarDropdownMenuAvatar"
+          >
+            <li>
+              <a class="dropdown-item" href="#">My profile</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Settings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Logout</a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+</head>
+<body>
+    <div id="add" class="ar">
+        <form action="/abc" enctype="multipart/form-data" method="post">
+          <div>
+            <h1 class="heading">ROOM</h1><br>
+            <h1 class="heading">REGISTRATION</h1>
+            <input type="number" id="roomno" required name="RoomNo"placeholder="ROOM-NO:" value="">
+
+            <input type="number" placeholder="Price " name="Price">
+
+        </div>
+        <div class="roomtype">
+          <input type="radio" id="funrun" name="ROOMTYPE" value="1">
+          <label for="funrun">SINGLE BED</label>
+     <input type="radio" id="half" name="ROOMTYPE" value="2">
+          <label for="half">DOUBLE BED</label>
+      </div>
+      <input type="file" name="Productimage" placeholder="upload room photo">
+     
+          <button type="submit" class="btn btn-success">ADD ROOMS </button>
+          <button type="submit" class="btn btn-danger">GO TO DASHBOARD</button>
+        </form>
+      </div>
+    
+</body>
+</html>
